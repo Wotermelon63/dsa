@@ -27,7 +27,7 @@ for n in range(1, max_n + 1, step):
         end_time = time.time()
         run_times.append(end_time - start_time)
     
-    # Сохраняем среднее врем
+  
     n_values.append(n)
     times.append(mean(run_times))
 

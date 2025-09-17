@@ -3,17 +3,17 @@ import time
 import matplotlib.pyplot as plt
 from statistics import mean
 
-# Параметры эксперимента
-N = 12  # 20 - 8 = 12
-max_n = 10**5 * N  # 1.2 * 10^6
-step = 1000 * N  # 120000 вместо 1200
-num_runs = 5  # количество запусков для усреднения
 
-# Списки для хранения результатов
+N = 12 
+max_n = 10**5 * N 
+step = 1000 * N  
+num_runs = 5 
+
+
 n_values = []
 times = []
 
-#
+
 for n in range(1, max_n + 1, step):
     
     v = np.random.rand(n) + 0.001  
